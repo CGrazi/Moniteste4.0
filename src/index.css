@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* The site's colours, fonts and corners — change them here and the whole site follows. */
+@theme {
+  --color-primary: #111111;
+  --color-accent: #e5e5e5;
+  --color-background: #ffffff;
+  --color-foreground: #111111;
+  --color-muted: color-mix(in oklab, var(--color-foreground) 5%, var(--color-background));
+  --font-sans: "Roboto Mono", ui-monospace, monospace;
+  --font-heading: "Roboto Mono", ui-monospace, monospace;
+  --radius-site: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
